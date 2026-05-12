@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: "Courier New";
+            background-image: url(https://themes.webuniverseua.com/courses/HTML_CSS/theme22/resources/task2/background.png);
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            font-size: 14px;
+        }
+
+        .game-menu{
+            display: flex;
+            list-style: none;
+            background-color: #222;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        .game-menu > li{
+            position: relative;
+            padding: 12px 20px;
+            color: #fff;
+            font-weight: bold;
+            margin: 0 5px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .game-menu > li:hover{
+            background-color: #444;
+        }
+
+        .submenu{
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            background-color: #555;
+            list-style: none;
+            padding: 0;
+            border-radius: 5px;
+            width: max-content;
+        }
+
+        .submenu li{
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .game-menu li:hover > .submenu{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul class="game-menu">
+        <li>Грати</li>
+        <li>Персонажі
+            <ul class="submenu">
+                <li>Воїн</li>
+                <li>Маг</li>
+                <li>Лучник</li>
+                <li>Розбійник</li>
+            </ul>
+        </li>
+        <li>Налаштування
+            <ul class="submenu">
+                <li>Звук</li>
+                <li>Графіка</li>
+                <li>Клавіатура</li>
+            </ul>
+        </li>
+        <li>Вихід</li>
+    </ul>
+</body>
+</html>

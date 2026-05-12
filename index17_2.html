@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .hero{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid orangered;
+            background-color: bisque;
+        }
+
+        img{
+            width: auto;
+            height: 50%;
+            border-radius: 15px;
+            border: 2px solid orangered;
+            background-color: rgba(200,150,100,0.5);
+            padding: 20px;
+        }
+
+        .name{
+            font-size: 24px;
+            font-weight: bold;
+            color: orange;
+            margin-top: 15px;
+        }
+
+        .desc{
+            font-size: 16px;
+            color: brown;
+            padding-top: 10px;
+            text-align: center;
+            padding: 0 10px;
+        }
+
+        .ccc{
+            order: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <img src="https://static.wikia.nocookie.net/crashban/images/d/d1/Transparent_Crash_2_Coco.png/revision/latest?cb=20250212040857" alt="">
+        <div class="name">Coco Bandicoot</div>
+        <div class="desc">Розумна сестра Креша, допомагає винаходами та гаджетами.</div>
+    </div>
+    
+    <div class="hero">
+        <img src="https://static.wikia.nocookie.net/crashban/images/2/25/Crash_Bandicoot_PS1_Tawna_Emulator-enhanced_screenshot_crop.png/revision/latest?cb=20230516164825" alt="">
+        <div class="name">Tawna Bandicoot</div>
+        <div class="desc">Смілива і стильна героїня, допомагає Крешу та друзям.</div>
+    </div>
+
+    <div class="hero">
+        <img src="https://static.wikia.nocookie.net/crashban/images/5/56/Crunch_Bandicoot_The_Wrath_of_Cortex.png/revision/latest?cb=20200816015912" alt="">
+        <div class="name">Crunch Bandicoot</div>
+        <div class="desc">Сильний союзник Креша з потужною силою.</div>
+    </div>
+
+    <div class="hero ccc">
+        <img src="https://static.wikia.nocookie.net/crashban/images/0/03/Crash_1_Crash_Bandicoot.png/revision/latest?cb=20230516213125" alt="">
+        <div class="name">Crash Bandicoot</div>
+        <div class="desc">Веселий бандікут, який рятує острів від зла.</div>
+    </div>
+</body>
+</html>

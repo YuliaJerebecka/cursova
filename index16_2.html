@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS";
+            background-color: lavender;
+            text-align: center;
+        }
+
+        h1{
+            color: purple;
+        }
+
+        .heroes{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .hero{
+            background-color: white;
+            border: 7px outset purple;
+            border-radius: 15px;
+            width: 200px;
+            padding: 10px;
+        }
+
+        .hero:hover{
+            background-color: plum;
+
+        }
+
+        img{
+            height: 100px;
+            width: auto;
+            border-radius: 10px;
+            border: 1px solid purple;
+        }
+
+        .name{
+            font-weight: bold;
+            color: darkmagenta;
+            margin-top: 5px;
+        }
+
+        .desc{
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Обери свого героя зі світу Spyro</h1>
+    <div>
+        <div class="heroes">
+            <div class="hero">
+                <img src="https://static.wikia.nocookie.net/spyro/images/4/47/Spyro_PS1_original.jpg/revision/latest?cb=20190330094953" alt="">
+                <div class="name">Spyro the Dragon</div>
+                <div class="desc">Фіолетовий дракон, рятує <br> друзів і світ від зла.</div>
+            </div>
+
+            <div class="hero">
+                <img src="https://static.wikia.nocookie.net/spyro/images/5/51/Sheila_PS1.jpg/revision/latest?cb=20180821091927" alt="">
+                <div class="name">Sheila</div>
+                <div class="desc">Добра кенгуру, що вміє <br> високо стрибати і допомагає <br> друзям.</div>
+            </div>
+
+            <div class="hero">
+                <img src="https://static.wikia.nocookie.net/spyro/images/f/f3/Sgt_Byrd_PS1.jpg/revision/latest?cb=20181112213233" alt="">
+                <div class="name">Sgt Byrd</div>
+                <div class="desc">Пінгвін-солдат із реактивним <br> ранцем і ракетами.</div>
+            </div>
+
+            <div class="hero">
+                <img src="https://static.wikia.nocookie.net/spyro/images/e/e7/Bentley_PS1.jpg/revision/latest?cb=20181119071056" alt="">
+                <div class="name">Bentley</div>
+                <div class="desc">Велетенський єтті, що <br> володіє надлюдською <br> силою і ніжною душею.</div>
+            </div>
+
+            <div class="hero">
+                <img src="https://static.wikia.nocookie.net/spyro/images/7/7d/Agent_9_PS1.jpg/revision/latest?cb=20181011180557" alt="">
+                <div class="name">Agent 9</div>
+                <div class="desc">Мавпа з лазером і вибуховим <br> характером.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

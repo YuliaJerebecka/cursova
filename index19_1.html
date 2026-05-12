@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightcyan;
+            font-family: Arial;
+            font-size: 14px;
+        }
+
+        form{
+            background-color: white;
+            border: 2px solid lightskyblue;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        fieldset{
+            border: 1px solid lightblue;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: left;
+        }
+
+        select{
+            width: 100%;
+        }
+
+        .button{
+            background-color: goldenrod;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            font-family: bold;
+            margin: 5px auto;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h2>Оберіть свій смак морозива</h2>
+        <fieldset>
+            <legend>Інформація про вас</legend>
+            Ім`я <input type="text" placeholder="Введіть ім’я">
+        </fieldset>
+
+        <fieldset>
+            <legend>Тип морозива</legend>
+            <input type="radio" name="qqq">Шоколадне <br>
+            <input type="radio" name="qqq">Ванільне <br>
+            <input type="radio" name="qqq">Полуничне <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Додаткові топінги</legend>
+            <input type="checkbox">Шоколадна крихта <br>
+            <input type="checkbox">Горіхи <br>
+            <input type="checkbox" disabled> Льодяники <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Оберіть улюблені фрукти</legend>
+            <select size="3">
+                <option>
+                    Полуниця
+                </option>
+                <option>
+                    Банан
+                </option>
+                <option>
+                    Вишня
+                </option>
+                <option>
+                    Манго
+                </option>
+                <option>
+                    Ківі
+                </option>
+            </select>
+        </fieldset>
+
+        <input type="submit" value="Зберегти вибір" class="button">
+        <input type="reset" value="Очистити форму" class="button">
+
+    </form>
+</body>
+</html>

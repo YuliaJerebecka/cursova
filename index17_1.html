@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: url(https://themes.webuniverseua.com/courses/HTML_CSS/theme17/resources/task1/background.png);
+            background-size: cover;
+        }
+
+        h1{
+            color: darkgreen;
+        }
+
+        .pond{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: start;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 100px;
+            height: 300px;
+            position: relative;
+        }
+
+        .lotus{
+            width: 200px;
+            height: 90px;
+            background-image: url(https://themes.webuniverseua.com/courses/HTML_CSS/theme17/resources/task1/pond.png);
+            background-size: cover;
+        }
+
+        .house{
+            width: 270px;
+            height: 200px;
+            background-image: url(https://themes.webuniverseua.com/courses/HTML_CSS/theme17/resources/task1/house.png);
+            background-size: cover;
+            position: relative;
+        }
+
+        .frog{
+            width: 100px;
+            position: absolute;
+            bottom: 0;
+            left: 30%;
+            display: none;
+        }
+
+        .house:hover .frog{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Наведи на будинок - вилізе жабка!</h1>
+    <div class="pond">
+        <div class="lotus"></div>
+        <div class="lotus"></div>
+        <div class="house">
+            <img class="frog" src="https://themes.webuniverseua.com/courses/HTML_CSS/theme17/resources/task1/frog.png" alt="">
+        </div>
+        <div class="lotus"></div>
+        <div class="lotus"></div>
+        <div class="lotus"></div>
+        <div class="lotus"></div>
+        <div class="lotus"></div>
+    </div>
+    
+</body>
+</html>

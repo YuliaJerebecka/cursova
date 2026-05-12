@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial;
+            margin: 20px;
+            text-align: center;
+            background-color: linen;
+        }
+
+        .characters{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .hero{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        img{
+            width: 120px;
+            height: auto;
+            margin: 10px;
+            border: 2px solid black;
+        }
+
+        button:focus+img{
+            border: 2px solid red;
+        }
+
+        fieldset{
+            width: 300px;
+            margin: 15px auto;
+            text-align: left;
+        }
+
+        button{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Обери свого героя</h1>
+    <div class="characters">
+        <div class="hero">
+            <button>Космонавт</button>
+            <img src="https://themes.webuniverseua.com/courses/HTML_CSS/theme19/resources/task2/Astronaut.png" alt="">
+        </div>
+
+        <div class="hero">
+            <button>Боєць</button>
+            <img src="https://themes.webuniverseua.com/courses/HTML_CSS/theme19/resources/task2/Fighter.png" alt="">
+        </div>
+
+        <div class="hero">
+            <button>Будівельник</button>
+            <img src="https://themes.webuniverseua.com/courses/HTML_CSS/theme19/resources/task2/Builder.png" alt="">
+        </div>
+    </div>
+
+    <form action="">
+        <fieldset>
+    <legend>Оберіть скіли для героя</legend>
+    <input type="checkbox"> Швидкість <br>
+    <input type="checkbox"> Сила <br>
+    <input type="checkbox"> Кмітливість<br>
+    <input type="checkbox"> Створення порталів <br>
+        </fieldset>
+
+    <fieldset>
+        <legend>Виберіть стиль гри</legend>
+        <input type="radio" name="qqq"> Онлайн <br>
+        <input type="radio" name="qqq"> Офлайн <br>
+        <input type="radio" name="qqq"> Кооперативна <br>
+    </fieldset>
+
+    <input value="Відправити" type="submit">
+    </form>
+</body>
+</html>

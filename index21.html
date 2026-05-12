@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style21.css">
+</head>
+<body>
+    <form action="world21.html">
+        <h2>Реєстрація</h2>
+        <fieldset>
+            <legend>Дані мандрівника</legend>
+            <input class="info" type="text" placeholder="Email" required>
+            <input class="info" type="text" placeholder="Ім’я" required>
+            <input class="info" type="password" placeholder="Пароль" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Країна відправлення</legend>
+            <select>
+                <option>Україна</option>
+                <option>Франція</option>
+                <option disabled>Японія</option>
+                <option>Америка</option>
+                <option>Єгипет</option>
+                <option>Бразиія</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Стать</legend>
+            <input type="radio" name="hhh">Жінка
+            <input type="radio" name="hhh">Чоловік
+        </fieldset>
+
+        <fieldset>
+            <legend>Послуги</legend>
+            <input type="checkbox">Екскурсії <br>
+            <input type="checkbox">Страхування <br>
+            <input type="checkbox">Перекладач <br>
+            <input type="checkbox" disabled>VIP-тур <br>
+        </fieldset>
+        <textarea placeholder="Додаткові побажання..."></textarea>
+        <button class="submit">Почати подорож</button>
+    </form>
+</body>
+</html>

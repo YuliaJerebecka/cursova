@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(https://themes.webuniverseua.com/courses/HTML_CSS/theme26/resources/task1/background.png);
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
+        .status{
+            position: fixed;
+            left: 20px;
+            top: 20px;
+            width: 350px;
+
+        }
+
+        .status img{
+            width: 100%;
+        }
+
+        .bags{
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .bag{
+            width: 100px;
+            position: relative;
+        }
+
+        .bag img{
+            width: 100%;
+        }
+
+        .menu{
+            position: absolute;
+            bottom: 110px;
+            left: 50%;
+            padding: 8px;
+            transform: translateX(-50%);
+            border: 2px solid goldenrod;
+            border-radius: 6px;
+            flex-wrap: wrap;
+            display: none;
+            width: 124px;
+        }
+
+        .cell{
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid goldenrod;
+        }
+
+        .bag:hover .menu{
+            display: flex;
+        }
+
+        textarea{
+            left: 30px;
+            bottom: 30px;
+            width: 400px;
+            height: 150px;
+            resize: none;
+            position: absolute;
+            font-size: 40px;
+            padding: 30px;
+            background-color: rgba(240, 248, 255, 0.5);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="status">
+        <img src="https://themes.webuniverseua.com/courses/HTML_CSS/theme26/resources/task1/health.png" alt="">
+    </div>
+    <div class="bags">
+        <div class="bag">
+            <img src="https://themes.webuniverseua.com/courses/HTML_CSS/theme26/resources/task1/bag.png" alt="">
+            <div class="menu">
+                <div class="cell"><img src="https://themes.webuniverseua.com/courses/HTML_CSS/theme26/resources/task1/1.png" alt=""></div>
+                <div class="cell"><img src="https://themes.webuniverseua.com/courses/HTML_CSS/theme26/resources/task1/2.png" alt=""></div>
+                <div class="cell"><img src="" alt=""></div>
+                <div class="cell"><img src="" alt=""></div>
+                <div class="cell"><img src="https://themes.webuniverseua.com/courses/HTML_CSS/theme26/resources/task1/3.png" alt=""></div>
+                <div class="cell"><img src="" alt=""></div>
+                <div class="cell"><img src="" alt=""></div>
+                <div class="cell"><img src="" alt=""></div>
+            </div>
+        </div>
+        <div class="bag">
+            <img src="https://themes.webuniverseua.com/courses/HTML_CSS/theme26/resources/task1/bag.png" alt="">
+            <div class="menu">
+                <div class="cell"><img src="" alt=""></div>
+                <div class="cell"><img src="https://themes.webuniverseua.com/courses/HTML_CSS/theme26/resources/task1/4.png" alt=""></div>
+                <div class="cell"><img src="" alt=""></div>
+                <div class="cell"><img src="" alt=""></div>
+                <div class="cell"><img src="https://themes.webuniverseua.com/courses/HTML_CSS/theme26/resources/task1/5.png" alt=""></div>
+                <div class="cell"><img src="" alt=""></div>
+                <div class="cell"><img src="" alt=""></div>
+                <div class="cell"><img src="" alt=""></div>
+            </div>
+        </div>
+        <div class="bag">
+            <img src="https://themes.webuniverseua.com/courses/HTML_CSS/theme26/resources/task1/bag.png" alt="">
+            <div class="menu">
+                <div class="cell"><img src="" alt=""></div>
+                <div class="cell"><img src="https://themes.webuniverseua.com/courses/HTML_CSS/theme26/resources/task1/6.png" alt=""></div>
+                <div class="cell"><img src="" alt=""></div>
+                <div class="cell"><img src="" alt=""></div>
+                <div class="cell"><img src="" alt=""></div>
+                <div class="cell"><img src="" alt=""></div>
+                <div class="cell"><img src="" alt=""></div>
+                <div class="cell"><img src="" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <textarea disabled>Привіт! Ти у чарівному лісі! Заходь у хатину!</textarea>
+</body>
+</html>

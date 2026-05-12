@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial;
+            background-image: url(https://themes.webuniverseua.com/courses/HTML_CSS/theme20/resources/task3/background.png);
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            font-size: 14px;
+        }
+
+        h2{
+            text-align: center;
+        }
+
+        .side-images{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        img{
+            width: 200px;
+            height: auto;
+            border: 2px solid black;
+        }
+
+        a:focus img{
+            border: 2px solid red;
+        }
+
+        form{
+            width: 320px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+        }
+
+        fieldset{
+            margin-bottom: 10px;
+            border: 2px solid #555;
+            padding: 10px;
+        }
+
+        legend{
+            font-weight: bold;
+        }
+
+        .info{
+            margin: 5px 0;
+            width: 95%;
+            padding: 5px;
+            text-align: center;
+        }
+
+        select{
+            width: 100%;
+        }
+
+        textarea{
+            height: 60px;
+            padding: 10px;
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="side-images">
+        <a href="#"><img src="https://themes.webuniverseua.com/courses/HTML_CSS/theme20/resources/task3/wizard.png" alt=""></a>
+        <a href="#"><img src="https://themes.webuniverseua.com/courses/HTML_CSS/theme20/resources/task3/warrior.png" alt=""></a>
+    </div>
+
+    <form action="">
+        <h2>Реєстрація</h2>
+        <fieldset>
+            <legend>Інформація</legend>
+            <input class="info" type="text" placeholder="Iм’я"> <br>
+            <input class="info" type="password" placeholder="Пароль">
+        </fieldset>
+
+        <fieldset>
+            <legend>Виберіть стать</legend>
+            <input type="radio" name="qqq" checked>Жінка
+            <input type="radio" name="qqq">Чоловік
+        </fieldset>
+
+        <fieldset>
+            <legend>Навички</legend>
+            <input type="checkbox">Швидкість <br>
+            <input type="checkbox">Сила <br>
+            <input type="checkbox">Кмітливість <br>
+            <input type="checkbox" disabled>Режим БОГА <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Вік</legend>
+            <input type="radio" name="www" checked>Я старше 18 років <br>
+            <input type="radio" name="www">Мені менше 18 років <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Країна</legend>
+            <select size="">
+                <option>
+                    Україна
+                </option>
+                <option selected>Китай</option>
+                <option>Японія</option>
+                <option disabled>США</option>
+            </select>
+        </fieldset>
+
+        <textarea readonly>Опиши свого героя...</textarea>
+
+       <input class="info" type="submit" value="Створити героя"> 
+    </form>
+
+
+    <div class="side-images">
+        <a href="#"><img src="https://themes.webuniverseua.com/courses/HTML_CSS/theme20/resources/task3/archer.png" alt=""></a>
+        <a href="#"><img src="https://themes.webuniverseua.com/courses/HTML_CSS/theme20/resources/task3/robber.png" alt=""></a>
+    </div>
+</body>
+</html>
